@@ -58,7 +58,7 @@
       state: present
 
   - name: import mysql data or load mysql schema
-    community.mysql.mysql_info:
+    community.mysql.mysql_db:
       login_user: root
       login_password: "{{mysql_root_password}}"
       login_host: "{{login_host}}"
